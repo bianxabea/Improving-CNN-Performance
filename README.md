@@ -6,11 +6,13 @@
 
 **1. What were the weakest-performing classes based on the confusion matrix?**  
 
-The weakest-performing classes were those with the highest number of misclassifications, as seen by the off-diagonal values in the confusion matrix. These classes were frequently confused with others, indicating that the model had difficulty distinguishing their features, possibly due to similarity or insufficient training data.
+The confusion matrix highlights which classes the model misclassified most often. Typically, these are classes with overlapping visual features or fewer training samples.
 
 **2. How did Precision, Recall, and F1-score vary across classes?**  
 
-Precision, Recall, and F1-score varied across classes. Some classes achieved high precision but lower recall, meaning the model was accurate when predicting them but missed many actual instances. Other classes had higher recall but lower precision, indicating more false positives. The F1-score reflected the balance between these two metrics and highlighted inconsistencies in performance across different classes.
+- Precision was higher in classes with distinct features (fewer false positives).
+- Recall was lower in classes where the model missed many true samples (more false negatives).
+- F1-score balanced both, showing which classes had consistent performance versus those with trade-offs.
 
 **3. What does a low recall indicate in your model?**  
 
